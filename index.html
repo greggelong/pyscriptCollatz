@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+     
+    <meta charset="utf-8">
+    <title> pyscript</title>
+
+  </head>
+  <body>
+    <py-env>
+      - paths:
+        - /neighbor.py   #path to local file
+   </py-env>
+      <py-script>
+from neighbor import collatzNeighbors #import function
+print("collatz")
+          
+print(collatzNeighbors(16)) 
+      </py-script>
+
+      <p>use shift and return</p>
+      <p>collatzNeighbors(num)</p>
+      <py-repl id="my-repl" auto-generate="true"> </py-repl>
+  
+</body>
+</html>
